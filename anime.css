@@ -1,0 +1,32 @@
+.fahadh-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.fahadh-row > * {
+    flex-basis:20rem;
+    flex-shrink:0;
+}
+
+.fahadh-row .card{
+    display: flex;
+    flex-direction:column;
+}
+
+.fahadh-row .card > .card-content{
+    flex-grow: 1;
+}
+
+.fahadh-row .card > .card-image{
+    flex-basis:25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
